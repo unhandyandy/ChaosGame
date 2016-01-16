@@ -3,6 +3,10 @@ Clojure program to make simple random dot fractals.
 
 This is a leiningen project for a very simple chaos game program.  It uses the Seesaw graphics library.
 
+To run:
+$ lein compile
+$ lein uberjar
+$ java -jar target/uberjar/chaos-game-0.1.0-standalone.jar
 
 Instructions: click on the canvas to add some corner points, then hit "Set Polygon".  Then add a starting point for the iteration.  Then hitting "Next!" will create a new point, which is the midpoint between the last iteration and a randomly chosen corner point.  The "+100" button performs 100 iterations.  
 
